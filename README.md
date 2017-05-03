@@ -9,7 +9,7 @@ Choose your flavour
 * `npm install authorized-roles`
 * `bower install authorized-roles`
     
-and add dynamic-table.js (or .min version) to your index.html
+and add authorized-roles.js (or .min version) to your index.html
 
 ### Usage
 
@@ -36,13 +36,13 @@ function MainControler(authorizedRolesService){
 
 * Use the authorized-roles attribute on the HTML elements that you want to show/remove based on the roles previously inserted
 
-This button will be visible for users with the role "ADMIN" (or to put it in other words, the directive will remove the button element if no role "ADMIN" is found among the user roles):
+> This button will be visible for users with the role "ADMIN" (or to put it in other words, the directive will remove the button element if no role "ADMIN" is found among the user roles):
 
 ```html
 <button authorized-roles="['ADMIN']"></button>
 ```
 
-As soon as one the roles set in the attribute matches any of the logged user roles, the element won't be removed from the DOM.
+> As soon as one the roles set in the attribute matches any of the logged user roles, the element won't be removed from the DOM.
 
 ```html
 <label authorized-roles="['ADMIN','LEVEL_A','LEVEL_B']">I am visible for any of these roles</label>
