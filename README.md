@@ -1,6 +1,6 @@
 # authorized-roles
 
-[AngularJS](https://github.com/angular/angular.js) directive for layout control to show or remove elements based on the logged user roles.
+[AngularJS](https://github.com/angular/angular.js) directive for layout control. Show or remove elements based on the logged user 'roles'.
 
 ### Install
 
@@ -9,7 +9,7 @@ Choose your flavour
 * `npm install authorized-roles`
 * `bower install authorized-roles`
     
-and add authorized-roles.js (or .min version) to your index.html
+and add authorized-roles.js (or .min) to your index.html
 
 ### Usage
 
@@ -39,7 +39,7 @@ function MainControler(authorizedRolesService){
 > This button will be visible for users with the role "ADMIN" (or to put it in other words, the directive will remove the button element if no role "ADMIN" is found among the user roles):
 
 ```html
-<button authorized-roles="['ADMIN']"></button>
+<button authorized-roles="['ADMIN']">THE ADMIN BUTTON</button>
 ```
 
 > As soon as one the roles set in the attribute matches any of the logged user roles, the element won't be removed from the DOM.
